@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-/* Structure to hold memory block metadata */
+/* Structura care sa retina datele unui bloc de memorie */
 struct block_meta {
 	size_t size;
 	int status;
@@ -10,7 +10,7 @@ struct block_meta {
 	struct block_meta *next;
 };
 
-/* Block metadata current status values */
+/* Posibilile stari ale unui block */
 #define STATUS_FREE   0
 #define STATUS_ALLOC  1
 #define STATUS_MAPPED 2
